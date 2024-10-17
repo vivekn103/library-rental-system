@@ -6,6 +6,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.OneToMany;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -23,7 +24,6 @@ public class Customer {
 	private Integer customerId;
 	private String customerName;
 	private String customerEmail;
-//	private String customerPassword;
-	@OneToMany
+	@ManyToMany
 	private List<Book> ownedBooks;
 }

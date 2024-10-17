@@ -1,22 +1,23 @@
-package com.te.brs.entity;
+package com.te.brs.dto;
 
 import java.time.LocalDate;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Setter
-@Getter
 @Builder
-public class BookDetails {
+public class RentBookDTO {
 	
+	private Integer bookId;
 	private String bookName;
 	private String author;
 	private String publishedBy;
 	private LocalDate publishedDate;
+	private String bookDiscription;
+	
 }
