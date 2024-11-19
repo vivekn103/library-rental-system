@@ -11,5 +11,5 @@ public interface BookRepository extends JpaRepository<Book, Integer> {
 	Book findByBookName(String bookName);
 
 	boolean existsByBookName(String string);
-
+	
 }

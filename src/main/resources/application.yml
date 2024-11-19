@@ -6,7 +6,7 @@ spring:
     name: EMSApplication
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/library-book-rental-system?createDatabaseIfNotExist=true
+    url: jdbc:mysql://localhost:3306/file-upload-sample?createDatabaseIfNotExist=true
     username: vivek
     password: Vivek@123
   jpa:
